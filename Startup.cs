@@ -8,11 +8,17 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
 using Microsoft.OpenApi.Models;
 using restertaunt.Models;
+using Microsoft.AspNetCore.Http;
+using restertaunt.Services;
+using System.IO;
+using Microsoft.Extensions.FileProviders;
+
+using Microsoft.Extensions.Hosting;
+
 
 namespace restertaunt
 {
@@ -29,11 +35,18 @@ namespace restertaunt
         public void ConfigureServices(IServiceCollection services)
         {
 
-            services.Configure<DatabaseSetting>(
-            Configuration.GetSection(nameof(DatabaseSetting)));
+            services.Configure<DatabaseSettings>(
+            Configuration.GetSection(nameof(DatabaseSettings)));
 
-            services.AddSingleton<DatabaseSetting>(sp =>
-            sp.GetRequiredService<IOptions<DatabaseSetting>>().Value);
+            services.AddSingleton<DatabaseSettings>(sp =>
+            sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
+            services.AddSingleton<EmployeeService>();
+            services.AddSingleton<IncomeService>();
+            services.AddSingleton<OrderService>();
+            services.AddSingleton<TableService>();
+            services.AddSingleton<FoodService>();
+            services.AddSingleton<TypeFoodService>();
+            services.AddSingleton<PromotionService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
 
@@ -54,6 +67,13 @@ namespace restertaunt
                 .AllowAnyHeader()
                 .AllowAnyMethod()
             );
+            app.UseStaticFiles();
+
+            app.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+                RequestPath = new PathString("/Resources")
+            });
             app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
