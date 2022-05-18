@@ -40,12 +40,12 @@ namespace restertaunt
             services.AddSingleton<DatabaseSettings>(sp =>
             sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
             services.AddSingleton<EmployeeService>();
-            services.AddSingleton<IncomeService>();
-            services.AddSingleton<OrderService>();
-            services.AddSingleton<TableService>();
-            services.AddSingleton<FoodService>();
-            services.AddSingleton<TypeFoodService>();
-            services.AddSingleton<PromotionService>();
+            // services.AddSingleton<IncomeService>();
+            // services.AddSingleton<OrderService>();
+            // services.AddSingleton<TableService>();
+            // services.AddSingleton<FoodService>();
+            // services.AddSingleton<TypeFoodService>();
+            // services.AddSingleton<PromotionService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
 
