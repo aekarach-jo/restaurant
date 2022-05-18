@@ -46,9 +46,9 @@
               "target": "Package",
               "version": "[2.15.1, )"
             },
-            "Swashbuckle.AspNetCore": {
+            "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting": {
               "target": "Package",
-              "version": "[6.3.1, )"
+              "version": "[4.3.0, )"
             }
           },
           "imports": [

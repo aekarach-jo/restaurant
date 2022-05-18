@@ -76,3 +76,5 @@ C:\Users\Darkzone\Desktop\EndProject\restaurant\obj\Debug\netcoreapp3.1\staticwe
 C:\Users\Darkzone\Desktop\EndProject\restaurant\obj\Debug\netcoreapp3.1\restertaunt.RazorTargetAssemblyInfo.cache
 C:\Users\Darkzone\Desktop\EndProject\restaurant\obj\Debug\netcoreapp3.1\restertaunt.csproj.CopyComplete
 C:\Users\Darkzone\Desktop\EndProject\restaurant\obj\Debug\netcoreapp3.1\restertaunt.genruntimeconfig.cache
+C:\Users\Darkzone\Desktop\EndProject\restaurant\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.Annotations.dll
+C:\Users\Darkzone\Desktop\EndProject\restaurant\bin\Debug\netcoreapp3.1\Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting.dll
