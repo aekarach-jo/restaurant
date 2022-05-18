@@ -1,0 +1,17 @@
+{
+  "version": 2,
+  "dgSpecHash": "SI+MolCulhycXHMC3MWOnAdazA2IPT7urrWGOEJpxYOWzzYlg9flOC288fCuUphii9Zf++tKOW96fXSeLxypsA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\restertaunt.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\cnos\\.nuget\\packages\\microsoft.extensions.apidescription.server\\3.0.0\\microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\microsoft.openapi\\1.3.1\\microsoft.openapi.1.3.1.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore\\6.3.1\\swashbuckle.aspnetcore.6.3.1.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore.annotations\\6.3.1\\swashbuckle.aspnetcore.annotations.6.3.1.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\6.3.1\\swashbuckle.aspnetcore.swagger.6.3.1.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\6.3.1\\swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen.conventionalrouting\\4.3.0\\swashbuckle.aspnetcore.swaggergen.conventionalrouting.4.3.0.nupkg.sha512",
+    "C:\\Users\\cnos\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\6.3.1\\swashbuckle.aspnetcore.swaggerui.6.3.1.nupkg.sha512"
+  ],
+  "logs": []
+}
