@@ -40,12 +40,12 @@ namespace restertaunt
             services.AddSingleton<DatabaseSettings>(sp =>
             sp.GetRequiredService<IOptions<DatabaseSettings>>().Value);
             services.AddSingleton<EmployeeService>();
-            // services.AddSingleton<IncomeService>();
-            // services.AddSingleton<OrderService>();
-            // services.AddSingleton<TableService>();
-            // services.AddSingleton<FoodService>();
-            // services.AddSingleton<TypeFoodService>();
-            // services.AddSingleton<PromotionService>();
+            services.AddSingleton<IncomeService>();
+            services.AddSingleton<OrderService>();
+            services.AddSingleton<TableService>();
+            services.AddSingleton<FoodService>();
+            services.AddSingleton<TypeFoodService>();
+            services.AddSingleton<PromotionService>();
             services.AddControllers();
             services.AddSwaggerGen(c =>
 
@@ -66,13 +66,13 @@ namespace restertaunt
                 .AllowAnyHeader()
                 .AllowAnyMethod()
             );
-            app.UseStaticFiles();
+            // app.UseStaticFiles();
 
-            app.UseStaticFiles(new StaticFileOptions
-            {
-                FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
-                RequestPath = new PathString("/Resources")
-            });
+            // app.UseStaticFiles(new StaticFileOptions
+            // {
+            //     FileProvider = new PhysicalFileProvider(Path.Combine(Directory.GetCurrentDirectory(), @"Resources")),
+            //     RequestPath = new PathString("/Resources")
+            // });
             app.UseHttpsRedirection();
             app.UseSwagger();
             app.UseSwaggerUI(c =>
