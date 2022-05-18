@@ -38,17 +38,13 @@
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "dependencies": {
-            "Microsoft.OpenApi": {
-              "target": "Package",
-              "version": "[1.3.1, )"
-            },
             "MongoDB.Driver": {
               "target": "Package",
               "version": "[2.15.1, )"
             },
-            "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting": {
+            "Swashbuckle.AspNetCore": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[6.3.1, )"
             }
           },
           "imports": [

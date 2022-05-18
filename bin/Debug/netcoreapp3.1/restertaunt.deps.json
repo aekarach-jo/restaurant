@@ -31,9 +31,8 @@
     ".NETCoreApp,Version=v3.1": {
       "restertaunt/1.0.0": {
         "dependencies": {
-          "Microsoft.OpenApi": "1.3.1",
           "MongoDB.Driver": "2.15.1",
-          "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting": "4.3.0",
+          "Swashbuckle.AspNetCore": "6.3.1",
           "Microsoft.AspNetCore.Antiforgery": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Abstractions": "3.1.0.0",
           "Microsoft.AspNetCore.Authentication.Cookies": "3.1.0.0",
@@ -336,11 +335,11 @@
       },
       "Microsoft.Extensions.ApiDescription.Server/3.0.0": {},
       "Microsoft.NETCore.Platforms/5.0.0": {},
-      "Microsoft.OpenApi/1.3.1": {
+      "Microsoft.OpenApi/1.2.3": {
         "runtime": {
           "lib/netstandard2.0/Microsoft.OpenApi.dll": {
-            "assemblyVersion": "1.3.1.0",
-            "fileVersion": "1.3.1.0"
+            "assemblyVersion": "1.2.3.0",
+            "fileVersion": "1.2.3.0"
           }
         },
         "compile": {
@@ -502,23 +501,9 @@
           "Swashbuckle.AspNetCore.SwaggerUI": "6.3.1"
         }
       },
-      "Swashbuckle.AspNetCore.Annotations/6.3.1": {
-        "dependencies": {
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.3.1"
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll": {
-            "assemblyVersion": "6.3.1.0",
-            "fileVersion": "6.3.1.0"
-          }
-        },
-        "compile": {
-          "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Annotations.dll": {}
-        }
-      },
       "Swashbuckle.AspNetCore.Swagger/6.3.1": {
         "dependencies": {
-          "Microsoft.OpenApi": "1.3.1"
+          "Microsoft.OpenApi": "1.2.3"
         },
         "runtime": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.Swagger.dll": {
@@ -542,21 +527,6 @@
         },
         "compile": {
           "lib/netcoreapp3.0/Swashbuckle.AspNetCore.SwaggerGen.dll": {}
-        }
-      },
-      "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting/4.3.0": {
-        "dependencies": {
-          "Swashbuckle.AspNetCore": "6.3.1",
-          "Swashbuckle.AspNetCore.Annotations": "6.3.1"
-        },
-        "runtime": {
-          "lib/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting.dll": {
-            "assemblyVersion": "4.3.0.0",
-            "fileVersion": "4.3.0.0"
-          }
-        },
-        "compile": {
-          "lib/netcoreapp3.1/Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting.dll": {}
         }
       },
       "Swashbuckle.AspNetCore.SwaggerUI/6.3.1": {
@@ -2327,12 +2297,12 @@
       "path": "microsoft.netcore.platforms/5.0.0",
       "hashPath": "microsoft.netcore.platforms.5.0.0.nupkg.sha512"
     },
-    "Microsoft.OpenApi/1.3.1": {
+    "Microsoft.OpenApi/1.2.3": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-2X5CCFJCnx6v86fnpOg4TKlU1ba7MSf1yakeT7VI4846s7i6fOkERwStX94Rcq8wJsLyQYsUitd6vR38viePeA==",
-      "path": "microsoft.openapi/1.3.1",
-      "hashPath": "microsoft.openapi.1.3.1.nupkg.sha512"
+      "sha512": "sha512-Nug3rO+7Kl5/SBAadzSMAVgqDlfGjJZ0GenQrLywJ84XGKO0uRqkunz5Wyl0SDwcR71bAATXvSdbdzPrYRYKGw==",
+      "path": "microsoft.openapi/1.2.3",
+      "hashPath": "microsoft.openapi.1.2.3.nupkg.sha512"
     },
     "Microsoft.Win32.Registry/5.0.0": {
       "type": "package",
@@ -2383,13 +2353,6 @@
       "path": "swashbuckle.aspnetcore/6.3.1",
       "hashPath": "swashbuckle.aspnetcore.6.3.1.nupkg.sha512"
     },
-    "Swashbuckle.AspNetCore.Annotations/6.3.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-ImSX2ttIAsyhDC1GE1Xgb/XitRvr2NzsyjI73PzPoSxmVH0/BUoF35tj68P/0YpJpZ9YKCje3ZZpbSkryXnLew==",
-      "path": "swashbuckle.aspnetcore.annotations/6.3.1",
-      "hashPath": "swashbuckle.aspnetcore.annotations.6.3.1.nupkg.sha512"
-    },
     "Swashbuckle.AspNetCore.Swagger/6.3.1": {
       "type": "package",
       "serviceable": true,
@@ -2403,13 +2366,6 @@
       "sha512": "sha512-+uoBV4h/6NhCPLoTofSmuOnZ+usu4PW1jP6l4OHwPyu2frbYXGNpJsHs5uUXXn929OiVQkT8wo3Lj/o+P99Ejg==",
       "path": "swashbuckle.aspnetcore.swaggergen/6.3.1",
       "hashPath": "swashbuckle.aspnetcore.swaggergen.6.3.1.nupkg.sha512"
-    },
-    "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting/4.3.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-YQOCzPy/4kTvE7iLBOxEdWfUT71uAeKzl26EptnRBYWZ+uUNalbbgQZvzcS24n0q31sEY5gTxzf1uXK918vPog==",
-      "path": "swashbuckle.aspnetcore.swaggergen.conventionalrouting/4.3.0",
-      "hashPath": "swashbuckle.aspnetcore.swaggergen.conventionalrouting.4.3.0.nupkg.sha512"
     },
     "Swashbuckle.AspNetCore.SwaggerUI/6.3.1": {
       "type": "package",
