@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\restertaunt.csproj": {}
+    "C:\\Users\\Darkzone\\Desktop\\EndProject\\restaurant\\restertaunt.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\restertaunt.csproj": {
+    "C:\\Users\\Darkzone\\Desktop\\EndProject\\restaurant\\restertaunt.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\restertaunt.csproj",
+        "projectUniqueName": "C:\\Users\\Darkzone\\Desktop\\EndProject\\restaurant\\restertaunt.csproj",
         "projectName": "restertaunt",
-        "projectPath": "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\restertaunt.csproj",
-        "packagesPath": "C:\\Users\\cnos\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cnos\\Documents\\Project\\New folder\\restertaunt\\obj\\",
+        "projectPath": "C:\\Users\\Darkzone\\Desktop\\EndProject\\restaurant\\restertaunt.csproj",
+        "packagesPath": "C:\\Users\\Darkzone\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Darkzone\\Desktop\\EndProject\\restaurant\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cnos\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Darkzone\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
             "projectReferences": {}
           }
         },
@@ -35,14 +36,19 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
           "dependencies": {
             "Microsoft.OpenApi": {
               "target": "Package",
               "version": "[1.3.1, )"
             },
-            "Swashbuckle.AspNetCore.SwaggerGen.ConventionalRouting": {
+            "MongoDB.Driver": {
               "target": "Package",
-              "version": "[4.3.0, )"
+              "version": "[2.15.1, )"
+            },
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[6.3.1, )"
             }
           },
           "imports": [
@@ -55,6 +61,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.NETCore.App.Host.win-x64",
+              "version": "[3.1.24, 3.1.24]"
+            }
+          ],
           "frameworkReferences": {
             "Microsoft.AspNetCore.App": {
               "privateAssets": "none"
@@ -63,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.419\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.202\\RuntimeIdentifierGraph.json"
         }
       }
     }
